@@ -8,7 +8,16 @@ const _Layout =()  => {
     return (
         <>
             <Stack>
-                <Stack.Screen name="login" options={{headerShown: false}} />
+                <Stack.Screen name="login" options={{
+                    title: '',
+                    headerBackTitle: '',
+                    headerShadowVisible: false,
+                    headerStyle: { backgroundColor: 'white' },
+                    headerLeft: () => (
+                        <TouchableOpacity onPress={router.back}>
+                            <Ionicons name="arrow-back" size={34} color={Colors.dark.background} />
+                        </TouchableOpacity>
+                    ),}} />
                 <Stack.Screen name="signup" options={{
                     title: '',
                     headerBackTitle: '',
