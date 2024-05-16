@@ -29,6 +29,18 @@ const _Layout =()  => {
                         </TouchableOpacity>
                     ),
                 }} />
+
+                <Stack.Screen name="verify/[phone]" options={{
+                    title: '',
+                    headerBackTitle: '',
+                    headerShadowVisible: false,
+                    headerStyle: { backgroundColor: Colors.light.background },
+                    headerLeft: () => (
+                        <TouchableOpacity onPress={router.back}>
+                            <Ionicons name="arrow-back" size={34} color={Colors.dark.background} />
+                        </TouchableOpacity>
+                    ),
+                }} />
             </Stack>
         </>
     )

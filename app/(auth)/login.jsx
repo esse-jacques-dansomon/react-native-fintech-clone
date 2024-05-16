@@ -1,18 +1,9 @@
 import {View, Text, ScrollView, KeyboardAvoidingView, TouchableOpacity, Platform} from 'react-native'
 import React, {useState} from 'react'
-import {SafeAreaView} from "react-native-safe-area-context";
-import {CustomButton, PhoneFormField, TextIconButton} from "../../components";
+import {CustomButton, PageTitle, PhoneFormField, TextIconButton} from "../../components";
 import {router} from "expo-router";
-import * as PropTypes from "prop-types";
 
 
-
-TextIconButton.propTypes = {
-    iconName: PropTypes.string,
-    iconColor: PropTypes.string,
-    iconSize: PropTypes.number,
-    title: PropTypes.string
-};
 const Login = () => {
     const [form, setForm] = useState({
         phone: '', countryCode: '',
@@ -20,7 +11,7 @@ const Login = () => {
     const keyboardVerticalOffset = Platform.OS === 'ios' ? 80 : 0;
 
     const onSubmit = () => {
-
+        router.push('/verify/[phone]')
     }
     return (
         <KeyboardAvoidingView
@@ -30,10 +21,10 @@ const Login = () => {
             <ScrollView>
 
             <View className="flex-1 mb-10 mt-4">
-                <Text className="text-4xl font-bold">Welcome back</Text>
-                <Text className="text-lg mt-3">
-                    Enter the phone number associated with account
-                </Text>
+                <PageTitle
+                title='Welcome back !'
+                subtitle='Enter your phone number and you will receive instructions on how to connect'
+                />
 
                 <PhoneFormField
                     countryCode={form.countryCode}

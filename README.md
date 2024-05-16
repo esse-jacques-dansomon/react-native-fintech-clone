@@ -1,49 +1,79 @@
-****# Welcome to your Expo app 👋
+# FinTech Clone App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+This React Native Expo app is a FinTech clone designed to provide users with financial services such as banking, investing, and budgeting functionalities. The app utilizes modern technologies to offer a seamless user experience across both iOS and Android platforms.
 
-## Get started
+## Screenshots
 
-1. Install dependencies
+<div style="display: flex; flex-direction: 'row'; gap: 10px; flex-wrap: wrap" >
+  <img src="docs/screenshots/1.png" alt="Screen 1" width="20%" />
+  <img src="docs/screenshots/2.png" alt="Screen 2" width="20%" />
+  <img src="docs/screenshots/3.png" alt="Screen 3" width="20%" />
+  <img src="docs/screenshots/4.png" alt="Screen 4" width="20%" />
+  <img src="docs/screenshots/5.png" alt="Screen 5" width="20%" />
+  <img src="docs/screenshots/6.png" alt="Screen 6" width="20%" />
+</div>
 
-   ```bash
+## Demo
+<div style="display: flex; flex-direction: 'row';">
+<img src="docs/screenshots/login.gif" width=30%>
+<img src="docs/screenshots/state.gif" width=30%>
+<img src="docs/screenshots/lockscreen.gif" width=30%>
+<img src="docs/screenshots/charts.gif" width=30%>
+<img src="docs/screenshots/icon.gif" width=30%>
+</div>
+
+## Features
+- **Banking Services**: Users can perform basic banking operations such as account management, transactions, and bill payments.
+- **Investment**: Provides tools for users to track investments, analyze trends, and make informed decisions.
+- **Budgeting Tools**: Offers budgeting features to help users manage their expenses, set financial goals, and track spending.
+- **Security**: Implements robust security measures to ensure the safety of user data and transactions.
+- **Customization**: Allows users to personalize their experience with customizable settings and preferences.
+
+## Getting Started
+To run the app locally, follow these steps:
+
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/essejacquesdansomon/react-native-fintech-clone.git as fintech
+   ```
+
+2. **Navigate to the project directory**:
+   ```
+   cd fintech-clone
+   ```
+
+3. **Install dependencies**:
+   ```
    npm install
    ```
-2. Start the app
 
-   ```bash
-    npx expo start
+4. **Start the development server**:
    ```
+   npm start
+   ```
+   This will launch the Expo development server.
 
-In the output, you'll find options to open the app in a
+5. **Scan QR Code**:
+   Use the Expo Go app on your mobile device to scan the QR code displayed in the terminal or Expo Dev Tools. This will open the app on your device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Technologies Used
+- **React Native**: Framework for building native mobile applications using JavaScript and React.
+- **Expo**: A set of tools and services for building and deploying React Native apps.
+- **Redux**: State management library for managing application state.
+- **Firebase**: Backend services for authentication, database, and cloud functions.
+- **React Navigation**: Routing and navigation library for React Native apps.
 
-When you're ready, run:
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m "Add new feature"`).
+5. Push to the branch (`git push origin feature/your-feature`).
+6. Create a pull request.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+This project is licensed under the [MIT License](LICENSE).
