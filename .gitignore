@@ -6,6 +6,7 @@ android/
 .idea/
 .vscode/
 npm-debug.*
+*.env
 *.jks
 *.p8
 *.p12
@@ -13,6 +14,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+
 
 
 # macOS

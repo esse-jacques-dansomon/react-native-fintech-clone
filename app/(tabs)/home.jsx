@@ -1,6 +1,6 @@
 import {View, Text, ScrollView} from 'react-native'
 import {Dropdown, RoundBtn, Transaction} from "../../components";
-import {Ionicons} from "@expo/vector-icons";
+import { useHeaderHeight } from '@react-navigation/elements';
 
 const transactions = [
     {
@@ -60,17 +60,19 @@ const transactions = [
     }
 ]
 const Home = () => {
+    const headerHeight = useHeaderHeight();
+
     return (
-        <ScrollView className="px-4 py-2">
+        <ScrollView className={`px-4  h-full`} contentContainerStyle={{paddingTop: headerHeight, paddingBottom: headerHeight}}>
             <View className="flex-row flex justify-center items-center h-[150px]">
                 <Text className="text-3xl font-bold">1420</Text>
                 <Text className="-mb-6 ml-2">$</Text>
             </View>
             <View className="flex-row justify-between items-center">
                 <RoundBtn title="Add Money" iconName="add" iconSize={30} iconColor="black" bgColor="white"/>
-                <RoundBtn title="Echange" iconName="refresh" iconSize={30} iconColor="black" bgColor="white"/>
+                <RoundBtn title="Exchange" iconName="refresh" iconSize={30} iconColor="black" bgColor="white"/>
                 <RoundBtn title="Details" iconName="list" iconSize={30} iconColor="black" bgColor="white"/>
-                <RoundBtn title="MOre" iconName="ellipsis-horizontal" iconSize={30} iconColor="black" bgColor="white"/>
+                <RoundBtn title="More" iconName="ellipsis-horizontal" iconSize={30} iconColor="black" bgColor="white"/>
                 {/*<Dropdown />*/}
 
             </View>
@@ -83,6 +85,10 @@ const Home = () => {
                         />
                     )
                 })}
+            </View>
+
+            <View className="flex-col flex justify-between items-start mt-10">
+                <Text className="text-[18px] font-bold">Services</Text>
             </View>
         </ScrollView>
     )

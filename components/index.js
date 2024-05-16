@@ -5,6 +5,7 @@ import PageTitle from "./PageTitle";
 import RoundBtn from "./RoundBtn";
 import Dropdown from "./Dropdown";
 import Transaction from "./Transaction";
+import CustomHeader from "./CustomHeader";
 
 
 export {
@@ -14,5 +15,6 @@ export {
     PageTitle,
     RoundBtn,
     Dropdown,
-    Transaction
+    Transaction,
+    CustomHeader
 }
