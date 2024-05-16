@@ -1,11 +1,11 @@
 import {View, Text} from 'react-native'
 import React from 'react'
 
-const Lifestyle = () => {
+const Crypto = () => {
     return (
         <View>
-            <Text>Lifestyle</Text>
+            <Text>Crypto tes</Text>
         </View>
     )
 }
-export default Lifestyle
+export default Crypto

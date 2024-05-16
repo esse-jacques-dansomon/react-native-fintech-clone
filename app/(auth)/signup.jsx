@@ -45,7 +45,7 @@ const Signup = () => {
                 <CustomButton
                     title="Sign Up"
                     onSubmit={onSubmit}
-                    disabled={form.countryCode === '' && form.countryCode === ''}/>
+                    disabled={ !(form.countryCode !== '' || form.countryCode !== '')}/>
 
             </View>
         </KeyboardAvoidingView>
