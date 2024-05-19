@@ -4,7 +4,7 @@ import {TouchableOpacity} from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import {Colors} from "../../constants/Colors";
 
-const _Layout =()  => {
+const _layout =()  => {
     return (
         <>
             <Stack>
@@ -46,4 +46,4 @@ const _Layout =()  => {
     )
 }
 
-export default _Layout
+export default _layout
