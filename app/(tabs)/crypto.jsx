@@ -25,19 +25,19 @@ const Page = () => {
 
     return (
         <ScrollView
-            style={{ backgroundColor: Colors.background }}
+            className={"px-4 py-4"}
             contentContainerStyle={{ paddingTop: headerHeight }}>
-            <Text >Latest Crypot</Text>
-            <View >
+            <Text className={"my-3 text-xl font-bold "}>Latest Crypot</Text>
+            <View className={"bg-white gap-2 rounded-2xl"}>
                 {currencies.data?.map((currency: Currency) => (
-                    <Link href={`/crypto/${currency.id}`} key={currency.id} asChild>
-                        <TouchableOpacity style={{ flexDirection: 'row', gap: 14, alignItems: 'center' }}>
-                            <Image source={{ uri: data?.[currency.id].logo }} style={{ width: 40, height: 40 }} />
+                    <Link  href={`/crypto/${currency.id}`} key={currency.id} asChild>
+                        <TouchableOpacity className={"flex-row items-center gap-1 my-2"} >
+                            <Image source={{ uri: data?.[currency.id].logo }} className={"w-[40px] h-[40px] mr-2"} />
                             <View style={{ flex: 1, gap: 6 }}>
                                 <Text style={{ fontWeight: '600', color: Colors.dark }}>{currency.name}</Text>
-                                <Text >{currency.symbol}</Text>
+                                <Text className={"text-[10px] text-gray-300"}>{currency.symbol}</Text>
                             </View>
-                            <View style={{ gap: 6, alignItems: 'flex-end' }}>
+                            <View className={"justify-end items-end gap-1 mr-4"}>
                                 <Text>{currency.quote.EUR.price.toFixed(2)} €</Text>
                                 <View style={{ flexDirection: 'row', gap: 4 }}>
                                     <Ionicons

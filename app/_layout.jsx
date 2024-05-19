@@ -43,7 +43,7 @@ export default function RootLayout() {
             <QueryClientProvider client={queryClient}>
                 {/*<UserInactivityProvider>*/}
                     <GestureHandlerRootView style={{ flex: 1 }}>
-                        <StatusBar style="light" />
+                        <StatusBar style="dark" />
                         {/*<ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>*/}
                             <Stack>
                                 <Stack.Screen name="index" options={{headerShown: false}}/>
