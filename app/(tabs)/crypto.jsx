@@ -10,6 +10,7 @@ import {Colors} from "../../constants/Colors";
 const Page = () => {
     const headerHeight = useHeaderHeight();
 
+
     const currencies = useQuery({
         queryKey: ['listings'],
         queryFn: () => fetch('/api/listings').then((res) => res.json()),
@@ -22,11 +23,12 @@ const Page = () => {
         queryFn: () => fetch(`/api/info?ids=${ids}`).then((res) => res.json()),
         enabled: !!ids,
     });
+    console.log(`/api/info?ids=${ids}`)
 
     return (
         <ScrollView
             className={"px-4 py-4"}
-            contentContainerStyle={{ paddingTop: headerHeight }}>
+            contentContainerStyle={{ paddingTop: headerHeight, paddingBottom: headerHeight }}>
             <Text className={"my-3 text-xl font-bold "}>Latest Crypot</Text>
             <View className={"bg-white gap-2 rounded-2xl"}>
                 {currencies.data?.map((currency: Currency) => (
