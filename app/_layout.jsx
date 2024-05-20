@@ -31,7 +31,7 @@ export default function RootLayout() {
     useEffect(() => {
         if (loaded) {
             SplashScreen.hideAsync();
-            router.replace('/crypto/1');
+            // router.replace('/crypto');
         }
     }, [loaded]);
 
@@ -55,8 +55,8 @@ export default function RootLayout() {
                         name="crypto/[id]"
                         options={{
                             title: '',
-                            headerLargeTitle: true,
-                            headerTransparent: true,
+                            headerLargeTitle: false,
+                            headerTransparent: false,
                             headerLeft: () => (
                                 <TouchableOpacity onPress={router.back}>
                                     <Ionicons name="arrow-back" size={30} color="black"/>
