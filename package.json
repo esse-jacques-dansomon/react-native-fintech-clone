@@ -3,7 +3,7 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start -c",
+    "start": "expo start --dev-client",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "npx expo run:ios",
@@ -48,7 +48,8 @@
     "victory-native": "^40.2.0",
     "zeego": "^1.10.0",
     "zustand": "^4.5.2",
-    "expo-haptics": "~13.0.1"
+    "expo-haptics": "~13.0.1",
+    "expo-local-authentication": "~14.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

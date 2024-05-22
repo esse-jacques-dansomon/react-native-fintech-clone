@@ -10,9 +10,8 @@ import {FontAwesome, Ionicons} from "@expo/vector-icons";
 import {StatusBar} from "expo-status-bar";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import {CustomHeader} from "../components";
 import {TouchableOpacity, View} from "react-native";
-// import { UserInactivityProvider } from '@/context/UserInactivity';
+import {UserInactivityProvider} from "../context/UserInactivityProvider";
 const queryClient = new QueryClient();
 
 
@@ -31,7 +30,7 @@ export default function RootLayout() {
     useEffect(() => {
         if (loaded) {
             SplashScreen.hideAsync();
-            // router.replace('/crypto');
+            router.replace('/lock');
         }
     }, [loaded]);
 
@@ -42,7 +41,7 @@ export default function RootLayout() {
     return (
         // <ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY!} tokenCache={tokenCache}>
         <QueryClientProvider client={queryClient}>
-            {/*<UserInactivityProvider>*/}
+            <UserInactivityProvider>
             <GestureHandlerRootView style={{flex: 1}}>
                 <StatusBar style="dark"/>
                 {/*<ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>*/}
@@ -50,6 +49,7 @@ export default function RootLayout() {
                     <Stack.Screen name="index" options={{headerShown: false}}/>
                     <Stack.Screen name="(auth)" options={{headerShown: false}}/>
                     <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                    <Stack.Screen name="(modals)" options={{headerShown: false}}/>
                     <Tabs.Screen
                         key="crypto/[id]"
                         name="crypto/[id]"
@@ -79,7 +79,7 @@ export default function RootLayout() {
                 </Stack>
                 {/*</ThemeProvider>*/}
             </GestureHandlerRootView>
-            {/*</UserInactivityProvider>*/}
+            </UserInactivityProvider>
         </QueryClientProvider>
         // </ClerkProvider>
 
