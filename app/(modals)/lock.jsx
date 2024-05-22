@@ -5,7 +5,7 @@ import {MaterialCommunityIcons} from "@expo/vector-icons";
 import {router} from "expo-router";
 import * as Haptics from "expo-haptics";
 import * as LocalAuthentication from "expo-local-authentication";
-import {useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming} from "react-native-reanimated";
+import Animated, {useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming} from "react-native-reanimated";
 
 
 const Lock = () => {
@@ -64,11 +64,11 @@ const Lock = () => {
             <Text className={"text-xl font-bold"}>Welcome back Esse Jacques</Text>
         </View>
 
-        <View className={"flex-row justify-center my-20"}>
+        <Animated.View style={style} className={"flex-row justify-center my-20"}>
             {codeLength.map((number, i) => (<View key={i}
                                                   className={`${code[i] ? 'bg-primary' : 'bg-gray-100'} flex-row items-center justify-center mx-3 h-4 w-4 rounded-[10px] `}>
             </View>))}
-        </View>
+        </Animated.View>
 
         <View className={"justify-between gap-y-12"}>
             <View className={"flex-row justify-around"}>

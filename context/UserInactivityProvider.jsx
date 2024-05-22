@@ -8,7 +8,7 @@ const storage = new MMKV({
     id: 'inactivty-storage',
 });
 
-export const UserInactivityProvider = ({children}): any => {
+export const UserInactivityProvider = ({children}): Screen => {
     const appState = useRef(AppState.currentState);
     const router = useRouter();
     const { isSignedIn } = true;
