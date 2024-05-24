@@ -6,6 +6,7 @@ import RoundBtn from "./RoundBtn";
 import Dropdown from "./Dropdown";
 import Transaction from "./Transaction";
 import CustomHeader from "./CustomHeader";
+import IconTextBtn from "./IconTextBtn";
 
 
 export {
@@ -16,5 +17,6 @@ export {
     RoundBtn,
     Dropdown,
     Transaction,
-    CustomHeader
+    CustomHeader,
+    IconTextBtn
 }

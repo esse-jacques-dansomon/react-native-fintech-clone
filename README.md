@@ -13,7 +13,8 @@ This React Native Expo app is a FinTech clone designed to provide users with fin
   <img src="docs/screenshots/5.png" alt="Screen 5" width="20%" />
   <img src="docs/screenshots/6.png" alt="Screen 6" width="20%" />
   <img src="docs/screenshots/7.png" alt="Screen 6" width="20%" />
-  <img src="docs/screenshots/7.png" alt="Screen 6" width="20%" />
+  <img src="docs/screenshots/8.png" alt="Screen 6" width="20%" />
+  <img src="docs/screenshots/9.png" alt="Screen 6" width="20%" />
 </div>
 
 ## Demo
