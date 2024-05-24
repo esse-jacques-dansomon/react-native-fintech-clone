@@ -10,7 +10,7 @@ const CustomHeader = () => {
     return (
         <BlurView intensity={80} tint={"default"} style={{paddingTop: top}} >
           <View className={`px-4 gap-x-2 h-[55px] flex-1 flex-row justify-center items-end pb-2`} >
-              <TouchableOpacity onPress={()=> (router.push())} className={"h-10 w-10 rounded-[50px] bg-gray-300 justify-center items-center"}>
+              <TouchableOpacity onPress={()=> (router.push('/account'))} className={"h-10 w-10 rounded-[50px] bg-gray-300 justify-center items-center"}>
                   <Text className={"font-bold"}>EJ</Text>
               </TouchableOpacity>
 

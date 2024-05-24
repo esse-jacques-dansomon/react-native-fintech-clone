@@ -30,6 +30,7 @@ const _Layout = () => {
                 },
             }}>
             <Tabs.Screen
+                kek="home"
                 name="home"
                 options={{
                     title: 'Home',
@@ -41,6 +42,7 @@ const _Layout = () => {
                 }}
             />
             <Tabs.Screen
+                key="invest"
                 name="invest"
                 options={{
                     title: 'Invest',
@@ -50,6 +52,7 @@ const _Layout = () => {
                 }}
             />
             <Tabs.Screen
+                key="transfers"
                 name="transfers"
                 options={{
                     title: 'Transfers',
@@ -59,6 +62,7 @@ const _Layout = () => {
                 }}
             />
             <Tabs.Screen
+                key="crypto"
                 name="crypto"
                 options={{
                     title: 'Crypto',
@@ -68,6 +72,7 @@ const _Layout = () => {
                 }}
             />
             <Tabs.Screen
+                key="lifestyle"
                 name="lifestyle"
                 options={{
                     title: 'Lifestyle',
